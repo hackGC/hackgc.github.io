@@ -8,15 +8,15 @@ p {
 }
 
 a {
-  color: #fed136;
+  color: #ff2222;
 }
 
 a:hover {
-  color: #fec503;
+  color: #ee0000;
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #ff2222 !important;
 }
 
 h1,
@@ -65,13 +65,13 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #ff2222;
+  border-color: #ff2222;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #fb0000 !important;
+  border-color: #fb0000 !important;
   color: white;
 }
 
@@ -79,13 +79,28 @@ section h3.section-subheading {
   box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
 }
 
+.btn-secondary {
+  background-color: rgba(255, 34, 34, 0);
+  border-color: #ff2222;
+}
+
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: #fb0000 !important;
+  border-color: #fb0000 !important;
+  color: white;
+}
+
+.btn-secondary:active, .btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+}
+
 ::-moz-selection {
-  background: #fed136;
+  background: #ff2222;
   text-shadow: none;
 }
 
 ::selection {
-  background: #fed136;
+  background: #ff2222;
   text-shadow: none;
 }
 
@@ -108,17 +123,17 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
+  background-color: #ff2222;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
-  color: #fed136;
+  color: #ff2222;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #ee0000;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -131,7 +146,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #ff2222;
 }
 
 @media (min-width: 992px) {
@@ -167,7 +182,7 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/red-matrix-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -245,7 +260,7 @@ header.masthead .intro-text .intro-heading {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(255, 34, 34, 0.9);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -449,7 +464,7 @@ header.masthead .intro-text .intro-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #fed136;
+  background-color: #ff2222;
 }
 
 .timeline > li .timeline-image h4 {
@@ -620,7 +635,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #ff2222;
   box-shadow: none;
 }
 
@@ -690,5 +705,5 @@ ul.social-buttons li a {
 }
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-  background-color: #fed136;
+  background-color: #ff2222;
 }
