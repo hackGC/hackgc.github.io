@@ -1,6 +1,7 @@
 // Styling for the masthead
 header.masthead {
   height: 100vh;
+
   text-align: center;
   color: white;
   background-image: url('../img/red-matrix-bg.jpg');
@@ -29,6 +30,7 @@ header.masthead {
 }
 @media(min-width:768px) {
   header.masthead {
+    min-height: 600px;
     .intro-text {
       padding-top: 300px;
       padding-bottom: 200px;
