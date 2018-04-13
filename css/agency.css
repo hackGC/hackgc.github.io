@@ -137,7 +137,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 100%;
   font-weight: 400;
   padding: 0.75em 0;
   letter-spacing: 1px;
@@ -181,12 +181,10 @@ img::-moz-selection {
 
 header.masthead {
   height: 100vh;
+  min-height: 600px;
   text-align: center;
   color: white;
-  background-image: url("../img/hackGC.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
+  background: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -196,6 +194,14 @@ header.masthead {
 header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header.masthead .intro-text img {
+  width: 100%;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -204,14 +210,6 @@ header.masthead .intro-text .intro-lead-in {
   line-height: 22px;
   margin-bottom: 25px;
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -258,6 +256,23 @@ header.masthead .intro-text .intro-heading {
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 #portfolio .portfolio-item .portfolio-link:hover {
@@ -266,20 +281,21 @@ header.masthead .intro-text .intro-heading {
   text-decoration: none !important;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
-  max-width: 400px;
+#portfolio .portfolio-item .portfolio-link .portfolio-caption {
+  width: 100%;
+  height: 150px;
   margin: 0 auto;
   padding: 25px;
   text-align: center;
   background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#portfolio .portfolio-item .portfolio-link .portfolio-caption h4 {
   margin: 0;
   text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#portfolio .portfolio-item .portfolio-link .portfolio-caption p {
   font-size: 16px;
   font-style: italic;
   margin: 0;
